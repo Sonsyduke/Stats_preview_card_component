@@ -67,7 +67,7 @@ body {
 }
 
 .info-section {
-  padding: 50px 100px 50px 50px;
+  padding: 50px 70px 50px 50px;
   font-family: "Inter";
   align-self: center;
 }
@@ -112,4 +112,48 @@ span {
 .info {
   text-transform: uppercase;
   font-size: 0.75em;
+}
+
+/* =================================================== */
+
+/* End of Desktop version */
+
+/* =================================================== */
+
+@media (max-width: 1000px) {
+  .img {
+    width: 400px;
+  }
+}
+
+@media (max-width: 375px) {
+  .main-container {
+    flex-direction: column;
+    height: 900px;
+  }
+
+  .info-section {
+    padding: 30px;
+    font-family: "Inter";
+    align-self: center;
+  }
+
+  .img-section {
+    order: -1;
+  }
+
+  .img {
+    width: 300px;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .stats-section{
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .stats {
+    margin-bottom: 20px;
+  }
 }
